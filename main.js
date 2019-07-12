@@ -6,7 +6,7 @@ function myInput() {
     var InputBirthDate = prompt("Enter your Date of Birth ");
 
     var gender = prompt('M or F');
-
+    
 
     var Malename = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
@@ -19,12 +19,13 @@ function myInput() {
 
     var birthyear = parseInt(InputBirthYear.slice(2, 4));
 
-    var DayofBirth = parseInt(((Century / 4) - 2 * Century - 1) + ((5 * birthyear / 4)) + ((26 * (InputBirthMonth + 1) / 10))) % 7;
+    var DayofBirth = parseInt(((Century / 4) - 2 * Century - 1) + ((5 * birthyear / 4)) + ((26 * (InputBirthMonth + 1) / 10))+ InputBirthDate ) % 7;
     
 
     if (gender === "M") {
         var Mname = Malename[DayofBirth - 1]
         var day = DD[DayofBirth -1]
+        console.log(day);
         alert(" Since you were born on " + day + " Your name is "+ Mname);
 
         }
@@ -36,4 +37,7 @@ function myInput() {
 
 
     }
-    myInput()
+
+myInput();
+
+    
