@@ -6,9 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    link
+    <link rel="stylesheet" href="form.css">
+
 </head>
 <body>
-    
+    <div class="container bg-info">
+
+        <div class="jumbotron bg-info">
+
+            <div class="forms">
+
+               <h2>Discover your faviourite day today</h2>
+
+            </div>
+
+            <div class="forms-1">
+
+                <p>Fill in all the forms please!!</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron bg-link">
+            <div class="form">
+                <label>Birth Year</label>
+                <input type="year" class="form-control" id="birthyear">
+
+                <label>Birth Month</label>
+                <input type="year" class="form-control" id="birthmonth">
+
+                <label>Birth Date</label>
+                <input type="year" class="form-control" id="birthdate">
+
+                <label class="radio-label">Gender</label>
+                <div class="check">
+                
+                <input type="radio" class="radio-form" id="gender" value="male" id="M">Male
+                </div>
+                <div class="check">
+                        <input type="radio" class="radio-form" value="female" id="F">Female
+                </div>
+                <div class="button">
+                    <button onclick="myInput()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
