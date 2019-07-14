@@ -4,9 +4,9 @@
 
 ### Download the zip file extract the file and run the html file on your favourite browser
 
-![alt text]("src=img/Screenshot at 2019-07-14 21-50-27.png")
+![alt text](src="img/Screenshot at 2019-07-14 21-50-27.png")
 
-![alt text]("src=img/Screenshot at 2019-07-14 21-51-56.png")
+![alt text](src="img/Screenshot at 2019-07-14 21-51-56.png")
 
 ### Once you run the application you will see inputs forms on the browser display fill in the inputs according to the orders given then click on the submit button . Below the submit button your output will be indicated
 
