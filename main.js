@@ -1,4 +1,4 @@
-function myFunction(){
+function myInput(){
     
         var InputBirthYear =document.getElementById("birthyear");
        
@@ -18,24 +18,21 @@ function myFunction(){
      
         var DD = ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Sunday"];
      
-};
 
-function Century(){
-
-    myFunction();
-        var century = parseInt(document.getElementById("birthyear").slice(0, 2));
+        // var century = parseInt(document.getElementById("birthyear").slice(0, 2));
         
-        var birthyear = parseInt(document.getElementById("birthyear").slice(2, 4));
+        // var birthyear = parseInt(document.getElementById("birthyear").slice(2, 4));
+        
+        var century = parseInt(document.getElementById("birth").slice(0, 2));
 
+        var birthyear = parseInt(document.getElementById("birthyear").slice(2, 4));
         
 
 
         var DayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * birthyear / 4)) + ((26 * (InputBirthMonth + 1) / 10))+ InputBirthDate) % 7;
-};
 
-function myInput() {
-        
-        Century();
+
+
     
         if (gender1.checked == true) {
             gender1 === "male";
