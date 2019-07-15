@@ -1,16 +1,18 @@
+var  InputBirthYear , InputBirthMonth ,InputBirthDate;
+
 function myInput(){
     
-        var InputBirthYear =document.getElementById("birthyear").value;
+     InputBirthYear =document.getElementById("birthyear").value;
        
 
-        var InputBirthMonth = document.getElementById("birthmonth").value;
-     
-        var InputBirthDate = document.getElementById("birthdate").value;
-     
-        var gender1 = document.getElementById("gender");
+     InputBirthMonth = document.getElementById("birthmonth").value;
+ 
+     InputBirthDate = document.getElementById("birthdate").value;
+ 
+    var gender1 = document.getElementById("gender");
 
-        var gender2 = document.getElementById("gender");
-     
+    var gender2 = document.getElementById("gender");
+ 
      
         var Malename = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
      
@@ -31,11 +33,13 @@ function myInput(){
 
         var Mname = Malename[DayofBirth - 1];
         var day = DD[DayofBirth -1];
-        4
+        
         var Fname = Femalename[DayofBirth -1];
         var day = DD[DayofBirth - 1];
 
-        
+       
+
+
         if (gender1.checked == true) {
             
         
@@ -47,11 +51,36 @@ function myInput(){
        
             document.getElementById("result").innerHTML=(" Since you were born on " + day + " Your name is " + Fname);
         };
+        
+        var ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        
+        if(InputBirthMonth == 1 || InputBirthMonth > 2){
+            if(InputBirthDate > ListofDays[InputBirthMonth - 1]){
+                alert('invalid date');
+                return false;
+            };
+        };
+
+        if (InputBirthMonth == 2){
+            var leapyear = false;
+            if ((!(InputBirthYear % 4) && InputBirthYear % 100) || !(InputBirthYear % 400)){
+                leapyear = true;
+            }
+            if ((leapyear == true) && (InputBirthDate > 29)){
+                alert('invalid date format');
+                return false;
+            }
+        }
 
     };  
 
+
 myInput();
 
+function verify(){
+    if (InputBirthMonth.checked < 1 || InputBirthMonth.checked > 12);
+    alert("invalid month");
+};
 
 
 
