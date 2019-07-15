@@ -1,11 +1,11 @@
 function myInput(){
     
-        var InputBirthYear =document.getElementById("birthyear");
+        var InputBirthYear =document.getElementById("birthyear").value;
        
 
-        var InputBirthMonth = document.getElementById("birthmonth");
+        var InputBirthMonth = document.getElementById("birthmonth").value;
      
-        var InputBirthDate = document.getElementById("birthdate");
+        var InputBirthDate = document.getElementById("birthdate").value;
      
         var gender1 = document.getElementById("gender");
 
