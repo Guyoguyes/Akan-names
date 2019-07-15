@@ -77,10 +77,7 @@ function myInput(){
 
 myInput();
 
-function verify(){
-    if (InputBirthMonth.checked < 1 || InputBirthMonth.checked > 12);
-    alert("invalid month");
-};
+
 
 
 
