@@ -16,8 +16,11 @@ body{
 }
 .form{
     margin-top: -50px;
-    padding-left: 100px;
-    
+    padding-top: 100px;
+    padding-left: 500px;
+    background-color: aliceblue;
+    height: 900px;
+
 }
 .form p{
     font-size: 30px;

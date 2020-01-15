@@ -11,7 +11,7 @@ function myInput(){
  
     var gender1 = document.getElementById("gender");
 
-    var gender2 = document.getElementById("gender");
+    var gender2 = document.getElementById("gender2");
  
      
         var Malename = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
